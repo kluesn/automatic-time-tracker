@@ -19,7 +19,7 @@ Track time automatically for every note, PDF and drawing in your vault. Press **
 
 ## Installation
 
-**From the community plugins (once approved):** Settings → Community plugins → Browse → search for "Automatic Time Tracker" → Install → Enable.
+**From the community plugins:** Settings → Community plugins → Browse → search for "Automatic Time Tracker" → Install → Enable. You can also open the [plugin page](https://community.obsidian.md/plugins/automatic-time-tracker) and click **Install**.
 
 **Manually:** download `main.js`, `manifest.json` and `styles.css` from the [latest release](https://github.com/kluesn/automatic-time-tracker/releases/latest), put them into `<your vault>/.obsidian/plugins/automatic-time-tracker/` and enable the plugin under Settings → Community plugins.
 
