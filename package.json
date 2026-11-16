@@ -1,0 +1,15 @@
+{
+  "name": "automatic-time-tracker",
+  "version": "1.0.1",
+  "description": "Automatic time tracker for Obsidian: time per note, PDF and drawing, live view, areas and projects, Pomodoro.",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "build": "node esbuild.config.mjs"
+  },
+  "author": "kluesn",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}

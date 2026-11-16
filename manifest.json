@@ -1,7 +1,7 @@
 {
   "id": "automatic-time-tracker",
   "name": "Automatic Time Tracker",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minAppVersion": "1.5.11",
   "description": "Track time automatically for every note, PDF and drawing. Live sidebar with start, pause and stop, areas and projects, idle detection, Pomodoro, reminders and manual entries.",
   "author": "kluesn",

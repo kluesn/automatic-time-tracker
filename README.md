@@ -2,6 +2,8 @@
 
 Track time automatically for every note, PDF and drawing in your vault. Press **Start** once – the plugin records how long you work in each document, groups it into areas and projects, and keeps a live overview in your sidebar.
 
+![Live view in light and dark mode: running session with Pomodoro, and the project view](images/live-view.png)
+
 ## Features
 
 - **Automatic per-document tracking** – time is booked to the document you are working in (notes, PDFs, Excalidraw drawings, images …). Switching documents switches the counter.
@@ -62,6 +64,18 @@ Turn it on in the live view. Defaults: 25 min work, 5 min break, 15 min long bre
 - When the break ends, a notice with **Resume** stays until you click it.
 - Pausing manually freezes the countdown; Stop ends session and Pomodoro.
 
+## Overview note
+
+Besides the live view, the plugin keeps a Markdown note with your totals by area, project, document and day. Every tracked document is linked, so you can jump straight to it.
+
+![Overview note: totals by area](images/overview-summary.png)
+
+![Overview note: time per document with area, project, days and last use](images/overview-documents.png)
+
+## Theme
+
+The screenshots show the [Mokume](https://github.com/kluesn/obsidian-mokume) theme, made by the same author. The plugin works with any theme and follows Obsidian's light and dark mode. If you like the warm, paper-like look, you can install Mokume under Settings → Appearance → Themes → Manage.
+
 ## Data and privacy
 
 - Everything stays local. The plugin makes no network requests.
@@ -79,6 +93,17 @@ Turn it on in the live view. Defaults: 25 min work, 5 min break, 15 min long bre
 Start · Pause · Stop (end session) · Start/pause · Open live view · Open overview note · Add time manually · Manage manual entries · Toggle Pomodoro
 
 No hotkeys are set by default – assign your own under *Settings → Hotkeys*.
+
+## Building from source
+
+The plugin is written in plain JavaScript (`src/main.js`) and bundled with esbuild:
+
+```bash
+npm install
+npm run build
+```
+
+This creates `main.js` in the repository root. Copy `main.js`, `manifest.json` and `styles.css` into `<your vault>/.obsidian/plugins/automatic-time-tracker/` to test it. Releases are built by a GitHub Actions workflow, which also creates [artifact attestations](https://docs.github.com/en/actions/security-for-github-actions/using-artifact-attestations) for the release files.
 
 ## Feedback
 
